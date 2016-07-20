@@ -1,0 +1,23 @@
+<h1  id="yo" data=<%= @sandwich.id %> class=<%= @sandwich.name %>> Sandwich <%= @sandwich.name %> </h1>
+
+<h2> Ingredients </h2>
+<ul class="js-ingredient-list"><% @sandwich.ingredients.each do |i| %> 
+<li>
+	<%= i.name %></li> <% end %>
+ </ul>
+
+
+
+<h2>add ingredients</h2>
+<ul>
+
+	<% @ingredients.each do |i| %>
+	
+	<li>
+		<button class="js-ingred" data=<%= i.id %>>
+			<%= i.name %>
+		</button>
+	</li>
+
+<% end %>
+</ul>
